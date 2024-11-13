@@ -1,3 +1,8 @@
+
+
+
+
+
 const noButton = document.getElementById('no');
 
 // Function to move the "No" button randomly within the page, keeping it visible
@@ -39,9 +44,3 @@ noButton.addEventListener('click', function(e) {
 document.getElementById('yes').addEventListener('click', function() {
   alert("Yay! Let's go for the outing!");
 });
-
-
-
-
-
-  
