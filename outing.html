@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful and Romantic Button</title>
+    <style>
+        body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff0f5; /* Soft pink background for a romantic feel */
+    color: #6a4c4c; /* Subtle brown color for text */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: #ffffff; /* White background for clean minimalism */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.message {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #ff5e5e; /* Romantic red color for the question */
+    line-height: 1.4;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#yes, #no {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px; /* Rounded buttons for a soft look */
+    transition: transform 0.3s ease, background-color 0.2s ease;
+    font-weight: 600;
+}
+
+#yes {
+    background-color: #ff89b5; /* Soft pink for "Yes" */
+    color: white;
+}
+
+#yes:hover {
+    background-color: #ff5e5e; /* Darker pink on hover */
+    transform: scale(1.1);
+}
+
+#no {
+    background-color: #ffd9da; /* Lighter red for "No" */
+    color: #ff5e5e; /* Romantic red text color */
+}
+
+#no:hover {
+    background-color: #ff5e5e; /* Darker red on hover */
+    transform: scale(1.1);
+    color: white; /* White text on hover */
+}
+
+#no {
+    position: absolute;
+}
+
+.container:hover {
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15); /* Subtle hover shadow for the container */
+}
+
+/* Keyframe animation for the 'No' button to make it more playful */
+@keyframes moveNoButton {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(50px, -50px); }
+    50% { transform: translate(-50px, 50px); }
+    75% { transform: translate(30px, 30px); }
+    100% { transform: translate(0, 0); }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            Do you want to go out with me? (I dare you to say no! 😜)
+        </div>
+        <div class="btn-container">
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
